@@ -1,0 +1,254 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+form,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+*{
+    font-family :'Love Ya Like A Sister', cursive ;
+}
+/* 
+font-family: 'DM Serif Text', serif;
+font-family: 'Love Ya Like A Sister', cursive; */
+
+/* generales */
+body{
+    width: 95%;
+    margin: auto;
+}
+
+
+
+/* inicio de la cabecera */
+.cabecera{
+    width: 100%;
+    background-color: #dc3545;
+    display: flex;
+}
+
+.cabecera h1{
+    margin: 0 0 0 20px;
+    color: white;
+}
+
+.menu {
+    margin: 0 40px ;
+    width: 10%;
+}
+
+.menu li{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    margin: 10px 3px;
+}
+
+.menu a{
+    color: white;
+    margin: 0 7px ;
+    text-decoration: none;
+}
+
+/* inicio del cuerpo de pagina */
+
+.principal{
+    padding: 10px 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/inicial2.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contenido1{
+    width: 35%;
+   margin: 40px auto ;
+   border: 1px #fafad2bf solid;
+   border-radius: 10px;
+   background-color: #fafad2bf;
+   padding: 10px 0 10px 30px ;
+}
+
+
+
+
+ .contenido{
+     margin-top: -05px;
+    display: flex;
+    width: 100%;
+}
+
+.lugar{
+    width: 80%;
+    background-color: chartreuse;
+    margin: auto;
+}
+.img1{
+    width: 20%;
+    margin: 20px 10px 0 40px;
+}
+
+.img1 img{
+    width: 80%;
+    border-radius: 20px;
+}
+.descripcion{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.playa{
+    background-color: burlywood;
+}
+
+.rio{
+    background-color: burlywood;
+}
+
+/* comienzo del footer */
+
+footer{
+    display: flex;
+    padding-top: 40px ;
+}
+
+.informacion{
+    width: 50%;
+    padding: 0 0 0 40px;
+}
+
+.contacto{
+    width: 50%;
+    border-radius:10px;
+    background-color: burlywood;
+    padding: 20px;
+}
+ 
+/* inicio de las mediaquery */
+
+@media (min-width:425px) and (max-width:768px){
+    /* inicio del header */
+    body{
+        width: 90%;
+    }
+    .cabecera{
+        justify-content: center;
+    }
+
+    /* inicio main */
+    .cuerpo-pagina{
+        width: 100%;
+    }
+    .principal{
+        background-size: auto;
+        background-position: center;
+        height: 340px;
+        
+    }
+    .contenido1{
+        width: 70%;
+    }
+
+    .lugar{
+        width: 100%;
+    }
+    .descripcion{
+        text-align: center;
+    }
+
+    .imagen-principal{
+      display: none;  
+    }
+    .imagen-secundaria{
+        padding: 10px;
+    }
+}
+
+@media (min-width:320px) and (max-width:425px){
+    /* inicio del header */
+    body{
+        width: 100%;
+    }
+    .cabecera{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+
+    /* inicio del main */
+    .cuerpo-pagina{
+        margin-top: -10px;
+    }
+
+    .principal{
+        height: 300px;
+        background-size: cover;
+        background-position: top;
+        margin: 0 0 10px 0;
+    }
+
+    .contenido{  
+         width: 100%;
+         display: block;
+    }
+
+    
+
+    .descripcion{
+        width: 100%;
+    }
+
+    .imagen-secundaria{
+        width: 100%;
+    }
+
+    
+    footer{
+        display: block;
+    }
+
+    .informacion{
+        width: 100%;
+        text-align: center;
+        margin: 10px auto ;
+        
+    }
+
+    .contacto{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+
